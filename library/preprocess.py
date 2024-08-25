@@ -116,7 +116,7 @@ class Generate_BIO_labels():
                     word = nlq_tok[pos]
                     shift = end_index + 1
                     start_ind, end_index = get_ind(word, nlq[shift:])
-
+                    value_list.append((start_ind, end_index, label))
             return (nlq, {'entities': value_list})    
         
         ## ------------------------------------- Main Execution ------------------------------------------------------------##
